@@ -1,0 +1,18 @@
+.Apod {
+  margin: 0 auto;
+}
+
+.Apod-infoButton {
+  padding: 20px;
+}
+
+.Apod-intro {
+  text-align: justify;
+  padding: 0 10;
+  width: 960px;
+  margin: 0 auto;
+}
+
+img {
+  border-radius: 25px;
+}
