@@ -1,16 +1,10 @@
 import { connect } from 'react-redux'
-import App from './App'
-
-import {
-  loadApodItem
-} from '../state/App/actions'
-import {
-  selectErrorMessage,
-  selectIsLoading
-} from '../state/App/selectors'
+import App from './App';
+import { loadApodItem } from '../state/App/actions';
+import { selectErrorMessage, selectIsLoading } from '../state/App/selectors';
 
 const mapDispatchToProps = {
-  loadApodItem
+  loadApodItem,
 }
 
 const mapStateToProps = (state) => (
@@ -20,4 +14,4 @@ const mapStateToProps = (state) => (
   }
 )
 
-export default connect(mapStateToProps, mapDispatchToProps)(App)
+export default connect(mapStateToProps, mapDispatchToProps)(App);

@@ -5,7 +5,7 @@ import {
   APP_LOADING_START
 } from './constants'
 
-const appReducer = (state = initialState['app'], action) => {
+export default function appReducer(state = initialState['app'], action) {
   switch (action.type) {
     case APP_LOADING_START:
       return {
@@ -23,8 +23,6 @@ const appReducer = (state = initialState['app'], action) => {
         errorMessage: action.errorMessage
       }
     default:
-      return state
+      return state;
   }
 }
-
-export default appReducer

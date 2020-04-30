@@ -1,18 +1,14 @@
-import initialState from '../initialState'
-import {
-  APOD_ITEM_DATA,
-} from './constants'
+import initialState from '../initialState';
+import { APOD_ITEM_DATA } from './constants';
 
-const apodReducer = (state = initialState['apod'], action) => {
+export default function apodReducer(state = initialState['apod'], action) {
   switch (action.type) {
     case APOD_ITEM_DATA:
       return {
         ...state,
-        item: action.data
+        item: action.data,
       }
     default:
-      return state
+      return state;
   }
 }
-
-export default apodReducer

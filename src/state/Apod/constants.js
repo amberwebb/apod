@@ -1,1 +1,1 @@
-export const APOD_ITEM_DATA = 'APOD_ITEM_DATA'
+export const APOD_ITEM_DATA = 'APOD_ITEM_DATA';

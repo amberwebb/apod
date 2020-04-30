@@ -1,22 +1,19 @@
-import { connect } from 'react-redux'
-import Apod from './Apod'
-
+import { connect } from 'react-redux';
+import Apod from './Apod';
 import {
   selectApodCopyright,
   selectApodExplanation,
   selectApodImageLink,
-  selectApodTitle
-} from '../state/Apod/selectors'
-
-const mapDispatchToProps = {}
+  selectApodTitle,
+} from '../state/Apod/selectors';
 
 const mapStateToProps = (state) => (
   {
     apodCopyright: selectApodCopyright(state) || '',
     apodExplanation: selectApodExplanation(state) || '',
     apodImageLink: selectApodImageLink(state) || '',
-    apodTitle: selectApodTitle(state) || ''
+    apodTitle: selectApodTitle(state) || '',
   }
 )
 
-export default connect(mapStateToProps, mapDispatchToProps)(Apod)
+export default connect(mapStateToProps, null)(Apod);
