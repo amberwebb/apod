@@ -1,8 +1,7 @@
-const selectErrorMessage = state => state.app.errorMessage
+export function selectErrorMessage(state) {
+  return state.app.errorMessage;
+}
 
-const selectIsLoading = state => state.app.isLoading
-
-export {
-  selectErrorMessage,
-  selectIsLoading
+export function selectIsLoading(state) {
+  return state.app.isLoading;
 }

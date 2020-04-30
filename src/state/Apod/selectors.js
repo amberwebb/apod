@@ -1,14 +1,16 @@
-const selectApodCopyright = state => state.apod.item.copyright
 
-const selectApodExplanation = state => state.apod.item.explanation
+export function selectApodCopyright(state) {
+  return state.apod.item.copyright;
+}
 
-const selectApodImageLink = state => state.apod.item.url
+export function selectApodExplanation(state) {
+  return state.apod.item.explanation;
+}
 
-const selectApodTitle = state => state.apod.item.title
+export function selectApodTitle(state) {
+  return state.apod.item.title;
+}
 
-export {
-  selectApodCopyright,
-  selectApodExplanation,
-  selectApodImageLink,
-  selectApodTitle
+export function selectApodImageLink(state) {
+  return state.apod.item.url;
 }
